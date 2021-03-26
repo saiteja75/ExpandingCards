@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.container {
+    height: 100vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+.item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 80vh;
+    background: chocolate;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    margin: 10px;
+    flex: 0.5;
+    transition: flex 0.5s ease-in 0.2s;
+    position: relative;
+}
+
+.item h3 {
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+}
+
+.active {
+    flex: 3;
+}
+
+.active h3 {
+    opacity: 1;
+    transition: opacity 0.5s ease-in 0.5s;
+}
